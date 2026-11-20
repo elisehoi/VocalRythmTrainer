@@ -15,7 +15,7 @@ export async function settingsView(root: HTMLElement) {
   const cleanupFns: (() => void)[] = [];
 
   // ---------- Language ----------
-  const langTabs = tabs<Lang>([{ id: 'en', label: 'English' }, { id: 'fr', label: 'Français' }], (s.lang ?? 'en') as Lang, async (l) => {
+  const langTabs = tabs<Lang>([{ id: 'en', label: '🇬🇧 English' }, { id: 'fr', label: '🇫🇷 Français' }], (s.lang ?? 'en') as Lang, async (l) => {
     s.lang = l; await save(); setLang(l); resetCountWords();
     root.replaceChildren(); void settingsView(root);
   });

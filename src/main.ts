@@ -53,8 +53,8 @@ function languageScreen(): Promise<Lang> {
       h('div', { style: 'font-size:44px' }, '🎤'),
       h('h2', null, 'Choose your language · Choisis ta langue'),
       h('div', { class: 'stack', style: 'max-width:280px;margin:18px auto' },
-        h('button', { onclick: pick('en') }, 'English'),
-        h('button', { class: 'blue', onclick: pick('fr') }, 'Français')),
+        h('button', { onclick: pick('en') }, '🇬🇧 English'),
+        h('button', { class: 'blue', onclick: pick('fr') }, '🇫🇷 Français')),
       h('p', { class: 'muted small' }, 'You can change it later in Settings. · Tu pourras la changer dans les réglages.')));
   });
 }
