@@ -1,0 +1,25 @@
+{
+  "name": "vocal-rhythm-trainer",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.3.1",
+    "@capacitor/core": "^8.3.1",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/local-notifications": "^8.3.1",
+    "@capacitor/share": "^8.0.3",
+    "fflate": "^0.8.3",
+    "soundtouchjs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.3.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
